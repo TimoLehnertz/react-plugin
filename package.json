@@ -2,8 +2,17 @@
   "name": "rete-react-plugin",
   "version": "2.1.0",
   "description": "",
+  "main": "dist/rete-react-plugin.common.js",
+  "module": "dist/rete-react-plugin.esm.js",
+  "types": "dist/_types/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "rete build -c rete.config.ts",
+    "prepare": "npm run build",
     "lint": "rete lint",
     "doc": "rete doc --entries src/index.tsx"
   },
